@@ -1,2 +1,2 @@
 # algorithm-eansemble
-算法合计代码整理
+算法合集代码整理
