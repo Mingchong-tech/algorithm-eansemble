@@ -2,6 +2,11 @@ package class01;
 
 public class Code07_RotateMatrix {
 
+	/**
+	 * 按圈循环
+	 *
+	 * @param matrix 输入数组
+	 */
 	public static void rotate(int[][] matrix) {
 		int a = 0;
 		int b = 0;
@@ -12,6 +17,15 @@ public class Code07_RotateMatrix {
 		}
 	}
 
+	/**
+	 * 调换位置
+	 *
+	 * @param m 数组
+	 * @param a 确定A点
+	 * @param b 确定A点
+	 * @param c 确定B点
+	 * @param d 确定B点
+	 */
 	public static void rotateEdge(int[][] m, int a, int b, int c, int d) {
 		int tmp = 0;
 		for (int i = 0; i < d - b; i++) {
@@ -23,6 +37,11 @@ public class Code07_RotateMatrix {
 		}
 	}
 
+	/**
+	 * 打印
+	 *
+	 * @param matrix 输入
+	 */
 	public static void printMatrix(int[][] matrix) {
 		for (int i = 0; i != matrix.length; i++) {
 			for (int j = 0; j != matrix[0].length; j++) {
@@ -33,12 +52,11 @@ public class Code07_RotateMatrix {
 	}
 
 	public static void main(String[] args) {
-		int[][] matrix = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
+		int[][] matrix = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
 		printMatrix(matrix);
 		rotate(matrix);
 		System.out.println("=========");
 		printMatrix(matrix);
-
 	}
 
 }
